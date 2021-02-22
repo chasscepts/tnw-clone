@@ -16,6 +16,8 @@ li {
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .cover {
@@ -45,7 +47,7 @@ ul.h-list > li {
   padding: 0 5px;
 }
 
-header {
+#main-header {
   display: flex;
   justify-content: space-between;
 }
@@ -141,8 +143,16 @@ footer i {
 /* Funding section */
 
 #funding-section {
-  color: #ff4422;
   font-size: 1.3rem;
+  background-color: #fefaf8;
+}
+
+#funding-heading {
+  color: #ff4422;
+}
+
+#funding-section section {
+  margin: 1em;
 }
 
 #funding-section ul {
@@ -152,4 +162,15 @@ footer i {
 #funding-section ul li {
   font-size: 1.1rem;
   margin: 1rem;
+}
+
+#funding-section section h3 {
+  background-color: #ef482a;
+  color: white;
+  margin: 0;
+}
+
+#funding-section section div {
+  background-color: #fcebe7;
+  color: black;
 }
