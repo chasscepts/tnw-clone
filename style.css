@@ -257,6 +257,14 @@ footer i {
   color: #fff;
 }
 
+.footer-bottom-logo {
+  width: 40px;
+}
+
+.stackpath {
+  width: 65px;
+}
+
 /* /////////// icons ////////// */
 
 .icon-link {
