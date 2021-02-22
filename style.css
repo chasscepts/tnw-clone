@@ -167,10 +167,26 @@ footer i {
 #funding-section section h3 {
   background-color: #ef482a;
   color: white;
-  margin: 0;
 }
 
 #funding-section section div {
   background-color: #fcebe7;
   color: black;
+  margin-bottom: 1em;
+}
+
+#funding-section p {
+  color: #555;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+#funding-section .funding-section-last-part {
+  border-top: 1px solid #fcebe7;
+  margin: 1em 0;
+}
+
+#funding-section .funding-section-last-part span {
+  color: #aaa;
+  font-size: 1rem;
 }
