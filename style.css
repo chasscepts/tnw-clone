@@ -245,6 +245,18 @@ footer i {
   background-color: transparent;
 }
 
+.footer-top-list-2 a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #a7abaf;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.footer-top-list-2 a:hover {
+  color: #fff;
+}
+
 /* /////////// icons ////////// */
 
 .icon-link {
