@@ -8,7 +8,13 @@ html {
   font-size: 14px;
 }
 
-*, *::before, *::after {
+li {
+  list-style: none;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -115,9 +121,35 @@ footer i {
 }
 
 .hightlights-article-link {
-  background: linear-gradient(to top, rgb(0 0 0) 0%, rgb(0 0 0 / 80%) 10%, rgb(0 0 0 / 42%) 50%);
+  background: linear-gradient(
+    to top,
+    rgb(0 0 0) 0%,
+    rgb(0 0 0 / 80%) 10%,
+    rgb(0 0 0 / 42%) 50%
+  );
 }
 
 .hightlights-article-link:hover {
-  background: linear-gradient(to top, rgb(0 0 0) 0%, rgb(0 0 0 / 60%) 10%, rgb(0 0 0 / 30%) 50%);
+  background: linear-gradient(
+    to top,
+    rgb(0 0 0) 0%,
+    rgb(0 0 0 / 60%) 10%,
+    rgb(0 0 0 / 30%) 50%
+  );
+}
+
+/* Funding section */
+
+#funding-section {
+  color: #ff4422;
+  font-size: 1.3rem;
+}
+
+#funding-section ul {
+  padding: 0;
+}
+
+#funding-section ul li {
+  font-size: 1.1rem;
+  margin: 1rem;
 }
