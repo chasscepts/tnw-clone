@@ -225,3 +225,63 @@ footer i {
   text-align: center;
   padding: 35px;
 }
+
+.social-link {
+  padding: 10px;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-link.round {
+  border-radius: 50%;
+}
+
+.footer-top .social-link {
+  background-color: #333;
+  border: 2px solid #333;
+}
+
+.footer-top .social-link:hover {
+  background-color: transparent;
+}
+
+/* /////////// icons ////////// */
+
+.icon-link {
+  display: block;
+}
+
+.icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+
+.icon.facebook-light {
+  background-image: url(assets/images/facebook-light.png)
+}
+
+.icon.twitter-light {
+  background-image: url(assets/images/twitter-light.png);
+}
+
+.icon.youtube-light {
+  background-image: url(assets/images/youtube-light.png);
+}
+
+.icon.instagram-light {
+  background-image: url(assets/images/instagram-light.png);
+}
+
+.icon.pininterest-light {
+  background-image: url(assets/images/pininterest-light.png);
+}
+
+.icon.feeds-light {
+  background-image: url(assets/images/feeds-light.png);
+}
+
+.icon.email-light {
+  background-image: url(assets/images/email-light.png);
+}
