@@ -182,7 +182,9 @@ footer i {
 }
 
 #funding-section .funding-section-last-part {
+  background-color: #fefaf8;
   border-top: 1px solid #fcebe7;
+  padding: 1em 0;
   margin: 1em 0;
 }
 
