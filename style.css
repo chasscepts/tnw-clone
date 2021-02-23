@@ -299,6 +299,24 @@ p.icon-before::before {
 }
 
 /* Funding section */
+.funding-articles-container > section > img {
+  position: absolute;
+  width: 4.25rem;
+  min-width: 60px;
+  max-width: 60px;
+  height: 4.28rem;
+  min-height: 60px;
+  max-height: 60px;
+  margin: 0.9rem;
+  top: 0;
+  left: 0;
+}
+
+.funding-articles-container > section > div:nth-child(3) > div {
+  color: black;
+  position: relative;
+  left: 6rem;
+}
 
 .funding-section {
   background-color: #fefaf8;
@@ -315,8 +333,11 @@ p.icon-before::before {
 
 .funding-articles-container section h3 {
   color: white;
-  margin: 0 3.7em;
-  padding: 0.7em;
+  position: relative;
+  left: 6rem;
+  padding: 0.7rem 0;
+  font-family: Avalon, sans-serif;
+  font-size: 1.28rem;
 }
 
 .funding-articles-container p {
@@ -325,11 +346,26 @@ p.icon-before::before {
   line-height: 1.5em;
 }
 
+div.h4-h5-container h5 {
+  font-size: 12px;
+  color: #555;
+}
+
+.funding-articles-container div:nth-child(3) > div > h4 {
+  font-size: 1.28rem;
+  line-height: 20px;
+  padding-top: 10px;
+}
+
 .funding-articles-container .funding-articles-container-last-part {
   background-color: #fefaf8;
   border-top: 1px solid #fcebe7;
-  padding: 1em 0;
+  padding: 1.8em 0;
   margin: 1em 0;
+}
+
+div.h4-h5-container {
+  font-size: 1rem;
 }
 
 .funding-articles-container > section > p {
@@ -350,25 +386,12 @@ p.icon-before::before {
   font-size: 1rem;
 }
 
-.funding-articles-container > section > img {
-  position: absolute;
-  height: 3em;
-  width: 3em;
-  top: 0.5em;
-  left: 0.5em;
-}
-
 .funding-articles-container > section > div:nth-child(3) {
   background-color: #fcebe7;
   color: black;
   margin-bottom: 1em;
 }
 
-.funding-articles-container > section > div:nth-child(3) > div {
-  color: black;
-  margin: 0 3.7em;
-  padding: 0.5em;
-}
 
 .funding-articles-container > section > div.h3-container {
   background-color: red;
@@ -394,7 +417,7 @@ p.icon-before::before {
 
 .funding-articles-container section {
   position: relative;
-  margin: 2%;
+  padding: 0 30px;
 }
 
 .fourth-funding-section {
@@ -695,24 +718,10 @@ main {
 
   /* Funding section responsiveness */
 
-  .funding-articles-container > section > img {
-    position: absolute;
-    height: 3em;
-    width: 3em;
-    top: 0.5em;
-    left: 0.5em;
-  }
-
   .funding-articles-container > section > div:nth-child(3) {
     background-color: #fcebe7;
     color: black;
     margin-bottom: 1em;
-  }
-
-  .funding-articles-container > section > div:nth-child(3) > div {
-    color: black;
-    margin: 0 3.7em;
-    padding: 0.5em;
   }
 
   .funding-articles-container > section > div.h3-container {
