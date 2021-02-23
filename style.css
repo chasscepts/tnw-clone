@@ -240,7 +240,6 @@ header nav img {
 /* Funding section */
 
 #funding-section {
-  font-size: 1.3rem;
   background-color: #fefaf8;
 }
 
@@ -405,7 +404,7 @@ header nav img {
 }
 
 .icon.facebook-light {
-  background-image: url(assets/images/facebook-light.png)
+  background-image: url(assets/images/facebook-light.png);
 }
 
 .icon.twitter-light {
@@ -570,7 +569,7 @@ ul.h-list.menu-buttons li {
   padding: 0;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   #funding-articles-container {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -600,7 +599,7 @@ ul.h-list.menu-buttons li {
     );
     transition: all 0.3s ease-in-out;
   }
-  
+
   .hightlights-article-link:hover {
     background: linear-gradient(
       to top,
@@ -628,7 +627,7 @@ ul.h-list.menu-buttons li {
   .highlights > article:nth-child(2) {
     grid-row: 1;
   }
-  
+
   .highlights > article:nth-child(3) {
     grid-row: 2;
   }
@@ -685,10 +684,6 @@ ul.h-list.menu-buttons li {
 
   /* Funding section responsiveness */
 
-  #funding-articles-container {
-    display: grid;
-  }
-
   #funding-articles-container section {
     position: relative;
     margin: 2%;
@@ -696,18 +691,6 @@ ul.h-list.menu-buttons li {
 
   #fourth-funding-section {
     display: none;
-  }
-
-  #fourth-funding-section {
-    display: block;
-  }
-
-  #funding-articles-container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  #funding-articles-container {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -730,18 +713,18 @@ ul.h-list.menu-buttons li {
   }
 
   .highlights-article-1 .hightlights-article-link {
-    background: linear-gradient( 
-      rgb(255 24 0 / 65%) 0%, 
-      rgb(100 9 0 / 64%) 50%, 
-      rgb(121 81 72 / 43%) 80% 
+    background: linear-gradient(
+      rgb(255 24 0 / 65%) 0%,
+      rgb(100 9 0 / 64%) 50%,
+      rgb(121 81 72 / 43%) 80%
     );
   }
 
   .highlights-article-1 .hightlights-article-link:hover {
-    background: linear-gradient( 
-      rgb(255 24 0 / 60%) 0%, 
-      rgb(100 9 0 / 55%) 50%, 
-      rgb(121 81 72 / 43%) 80% 
+    background: linear-gradient(
+      rgb(255 24 0 / 60%) 0%,
+      rgb(100 9 0 / 55%) 50%,
+      rgb(121 81 72 / 43%) 80%
     );
   }
 
@@ -755,6 +738,5 @@ ul.h-list.menu-buttons li {
 
   #funding-articles-container {
     grid-template-columns: repeat(4, 1fr);
-  
   }
 }
