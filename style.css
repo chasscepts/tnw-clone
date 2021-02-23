@@ -151,7 +151,8 @@ footer i {
 .highlights-article h3 {
   font-size: 1.6rem;
   z-index: 2;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  line-height: 1;
 }
 
 .highlights-article ul {
@@ -453,6 +454,7 @@ main {
 
 .menu-row-2 {
   background-color: #e3e9ec;
+  align-items: center;
 }
 
 .menu-row-2 .menu {
@@ -562,6 +564,27 @@ ul.h-list.menu-buttons li {
   .highlights > article:nth-child(1) > h3 {
     font-size: 3.2rem;
     line-height: 0.9;
+  }
+
+  .menu-row-1 {
+    display: flex;
+  }
+
+  .menu-row-2 .menu {
+    visibility: visible;
+  }
+
+  .menu-buttons > li:last-child {
+    display: none;
+  }
+
+  #header-banner {
+    padding: 7px;
+    top: 80px;
+  }
+
+  main {
+    padding-top: 115px;
   }
 }
 
