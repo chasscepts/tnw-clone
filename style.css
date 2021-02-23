@@ -7,10 +7,16 @@ html {
   background-color: #fff;
   font-size: 14px;
   line-height: 1.5;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
 }
 
 li {
   list-style: none;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #f42;
 }
 
 *,
@@ -332,10 +338,15 @@ p.icon-before::before {
 
 #funding-section {
   background-color: #fefaf8;
+  margin: 1rem;
 }
 
 #funding-heading {
   color: #f42;
+}
+
+#funding-heading > ul > li {
+  margin: 0.7rem;
 }
 
 #funding-articles-container ul {
@@ -814,8 +825,12 @@ main {
     justify-content: space-between;
   }
 
+  #funding-heading > ul > li {
+    margin: 0.1rem;
+  }
+
   #funding-section {
     width: 75%;
-    margin: auto;
+    margin: 4rem auto;
   }
 }
