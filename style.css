@@ -237,6 +237,31 @@ header nav img {
   display: none;
 }
 
+ul.h-list > li.icon-before {
+  position: relative;
+  padding: 0 0 0 18px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.icon-before::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: -2px;
+  height: 16px;
+  width: 16px;
+  background-size: cover;
+}
+
+.icon-before.time::before {
+  background-image: url(assets/images/time-gray.png);
+}
+
+.icon-before.share::before {
+  background-image: url(assets/images/share-gray.png);
+}
+
 /* Funding section */
 
 #funding-section {
