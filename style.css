@@ -107,15 +107,21 @@ header nav img {
 }
 
 #header-banner {
-  background-color: #ffdd33;
-  padding: 0.5em;
+  position: fixed;
+  top: 51px;
+  width: 100%;
+  z-index: 3;
 }
 
 .page-alert-link {
+  background-color: #ffdd33;
+  display: block;
   width: 100%;
+  padding: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: center;
 }
 
 #nav-top-part,
@@ -521,14 +527,6 @@ main {
   padding-top: 112px;
 }
 
-#header-banner {
-  position: fixed;
-  top: 51px;
-  width: 100%;
-  padding: 20px;
-  z-index: 3;
-}
-
 .clip {
   position: absolute;
   clip-path: circle(1px);
@@ -718,6 +716,10 @@ ul.h-list.menu-buttons li {
     display: flex;
   }
 
+  .menu-row-2 {
+    justify-content: space-between;
+  }
+
   .menu-row-2 .menu {
     display: flex;
   }
@@ -727,8 +729,13 @@ ul.h-list.menu-buttons li {
   }
 
   #header-banner {
-    padding: 7px;
     top: 80px;
+  }
+
+  .page-alert-link {
+    padding: 7px;
+    padding-left: 120px;
+    text-align: left;
   }
 
   main {
@@ -818,6 +825,10 @@ ul.h-list.menu-buttons li {
 
   .highlights {
     height: 380px;
+  }
+
+  .page-alert-link {
+    padding-left: 20px;
   }
 
   #fourth-funding-section {
