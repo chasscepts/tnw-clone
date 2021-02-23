@@ -658,6 +658,8 @@ ul.h-list.menu-buttons li {
     padding-top: 115px;
   }
 
+  /* Funding section responsiveness */
+
   #funding-articles-container > section > img {
     position: absolute;
     height: 3em;
@@ -682,8 +684,6 @@ ul.h-list.menu-buttons li {
     background-color: red;
   }
 
-  /* Funding section responsiveness */
-
   #funding-articles-container section {
     position: relative;
     margin: 2%;
@@ -691,6 +691,17 @@ ul.h-list.menu-buttons li {
 
   #fourth-funding-section {
     display: none;
+  }
+
+  /* Funding heading responsiveness */
+  #funding-heading > ul {
+    display: flex;
+  }
+
+  #funding-heading > ul > li:not(li:nth-child(3))::after {
+    content: "|";
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -738,5 +749,12 @@ ul.h-list.menu-buttons li {
 
   #funding-articles-container {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* funding heading @1024 */
+
+  #funding-heading {
+    display: flex;
+    justify-content: space-between;
   }
 }
