@@ -86,6 +86,8 @@ header nav img {
   }
 
   #nav-top-part {
+    background-color: black;
+    color: white;
     grid-column: 2/3;
     grid-row: 1/2;
     display: flex;
