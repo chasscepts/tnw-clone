@@ -312,10 +312,15 @@ p.icon-before::before {
   left: 0;
 }
 
+.funding-articles-container > section > div:nth-child(3) {
+  background-color: #fcebe7;
+  color: black;
+  margin-bottom: 1em;
+}
+
 .funding-articles-container > section > div:nth-child(3) > div {
   color: black;
-  position: relative;
-  left: 6rem;
+  padding-left: 85px;
 }
 
 .funding-section {
@@ -333,9 +338,7 @@ p.icon-before::before {
 
 .funding-articles-container section h3 {
   color: white;
-  position: relative;
-  left: 6rem;
-  padding: 0.7rem 0;
+  padding: 6px 0 6px 85px;
   font-family: Avalon, sans-serif;
   font-size: 1.28rem;
 }
@@ -347,12 +350,12 @@ p.icon-before::before {
 }
 
 div.h4-h5-container h5 {
-  font-size: 12px;
+  font-size: 0.88rem;
   color: #555;
 }
 
 .funding-articles-container div:nth-child(3) > div > h4 {
-  font-size: 1.28rem;
+  font-size: 1.15rem;
   line-height: 20px;
   padding-top: 10px;
 }
@@ -373,6 +376,7 @@ div.h4-h5-container {
   font-size: 1rem;
   color: #555;
   font-weight: 100;
+  margin-left: 15px;
 }
 
 .funding-articles-container .funding-articles-container-last-part p {
@@ -386,15 +390,8 @@ div.h4-h5-container {
   font-size: 1rem;
 }
 
-.funding-articles-container > section > div:nth-child(3) {
-  background-color: #fcebe7;
-  color: black;
-  margin-bottom: 1em;
-}
-
-
 .funding-articles-container > section > div.h3-container {
-  background-color: red;
+  background-color: #f64120;
 }
 
 .funding-articles-container > section > div.funding-section-last-part {
@@ -417,7 +414,6 @@ div.h4-h5-container {
 
 .funding-articles-container section {
   position: relative;
-  padding: 0 30px;
 }
 
 .fourth-funding-section {
@@ -721,11 +717,11 @@ main {
   .funding-articles-container > section > div:nth-child(3) {
     background-color: #fcebe7;
     color: black;
-    margin-bottom: 1em;
+    padding-bottom: 1em;
   }
 
   .funding-articles-container > section > div.h3-container {
-    background-color: red;
+    background-color: #f64120;
   }
 
   .funding-articles-container section {
@@ -797,7 +793,8 @@ main {
   }
 
   .funding-section {
-    width: 75%;
+    max-width: 1000px;
+    padding: 40px;
     margin: 4rem auto;
   }
 }
