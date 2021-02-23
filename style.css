@@ -251,7 +251,7 @@ p.icon-before {
 
 .icon-before::before {
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
   top: -2px;
   height: 16px;
@@ -800,5 +800,10 @@ ul.h-list.menu-buttons li {
   #funding-heading {
     display: flex;
     justify-content: space-between;
+  }
+
+  #funding-section {
+    width: 75%;
+    margin: auto;
   }
 }
