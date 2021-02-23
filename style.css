@@ -109,6 +109,15 @@ ul.h-list > li {
   padding: 0 5px;
 }
 
+.funding-heading > ul > li {
+  margin: 0.7rem;
+}
+
+.funding-articles-container ul li {
+  font-size: 1.1rem;
+  margin: 1rem;
+}
+
 ul.h-list.menu-buttons li {
   padding: 0;
 }
@@ -120,6 +129,10 @@ ul.h-list.menu-buttons li {
 .menu-row-1 .popup a {
   display: block;
   width: 100%;
+}
+
+.footer .footer-top ul li {
+  padding: 0 8px;
 }
 
 .menu-row-1 .popup li:not(:last-child) {
@@ -150,11 +163,6 @@ ul.h-list.menu-buttons li {
 
 /* /////////// Main Header ///////////// */
 
-.main-header {
-  display: flex;
-  justify-content: space-between;
-}
-
 #header-img-tnw {
   background-color: black;
   padding: 1em;
@@ -182,10 +190,6 @@ header nav img {
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
-}
-
-@media (min-width: 768px) {
-
 }
 
 /* //////////// highlights section ////////// */
@@ -305,17 +309,8 @@ p.icon-before::before {
   color: #f42;
 }
 
-.funding-heading > ul > li {
-  margin: 0.7rem;
-}
-
 .funding-articles-container ul {
   padding: 0;
-}
-
-.funding-articles-container ul li {
-  font-size: 1.1rem;
-  margin: 1rem;
 }
 
 .funding-articles-container section h3 {
@@ -428,10 +423,6 @@ p.icon-before::before {
 
 .footer .footer-top ul:first-child {
   margin-bottom: 15px;
-}
-
-.footer .footer-top ul li {
-  padding: 0 8px;
 }
 
 .footer-bottom {
@@ -786,7 +777,6 @@ main {
   .funding-articles-container {
     grid-template-columns: repeat(4, 1fr);
   }
-
 
   .funding-heading {
     display: flex;
