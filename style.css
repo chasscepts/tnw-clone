@@ -688,26 +688,26 @@ ul.h-list.menu-buttons li {
     height: 100%;
   }
 
-  .highlights > article:nth-child(1) {
+  .highlights-article-1 {
     grid-column: 1;
     grid-row-start: 1;
     grid-row-end: 3;
   }
 
-  .highlights > article:nth-child(2),
-  .highlights > article:nth-child(3) {
+  .highlights-article-2,
+  .highlights-article-3 {
     grid-column: 2;
   }
 
-  .highlights > article:nth-child(2) {
+  .highlights-article-2 {
     grid-row: 1;
   }
 
-  .highlights > article:nth-child(3) {
+  .highlights-article-3 {
     grid-row: 2;
   }
 
-  .highlights > article:nth-child(1) > h3 {
+  .highlights-article-1 > h3 {
     font-size: 3.2rem;
     line-height: 0.9;
   }
