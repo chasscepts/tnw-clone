@@ -153,6 +153,7 @@ footer i {
 
 #funding-section section {
   margin: 1em;
+  position: relative;
 }
 
 #funding-section ul {
@@ -165,14 +166,9 @@ footer i {
 }
 
 #funding-section section h3 {
-  background-color: #ef482a;
   color: white;
-}
-
-#funding-section section div {
-  background-color: #fcebe7;
-  color: black;
-  margin-bottom: 1em;
+  margin: 0 3.7em;
+  padding: 0.7em;
 }
 
 #funding-section p {
@@ -191,4 +187,28 @@ footer i {
 #funding-section .funding-section-last-part span {
   color: #aaa;
   font-size: 1rem;
+}
+
+#funding-section > section > img {
+  position: absolute;
+  height: 3em;
+  width: 3em;
+  top: 0.5em;
+  left: 0.5em;
+}
+
+#funding-section > section > div:nth-child(3) {
+  background-color: #fcebe7;
+  color: black;
+  margin-bottom: 1em;
+}
+
+#funding-section > section > div:nth-child(3) > div {
+  color: black;
+  margin: 0 3.7em;
+  padding: 0.5em;
+}
+
+#funding-section > section > div.h3-container {
+  background-color: red;
 }
