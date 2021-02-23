@@ -32,6 +32,8 @@ Additional description about the project and its features.
 👤 **Samrood Ali**
 
 - GitHub: [@chasscepts](https://github.com/SamroodAli)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/samrood-ali/)
+- Twitter: [@ali_samrood](https://twitter.com/ali_samrood)
 
 ## 🤝 Contributing
 
