@@ -9,35 +9,39 @@
 </head>
 
 <body>
-  <header id="main-header">
+  <section id="header-banner">
+    <h2 class="clip">Header Banner</h2>
+    <p>Calling young digital talent in the Netherlands - Be recognised in the T500 &rarr;</p>
+  </section>
+  <header id="main-header" class="main-header">
     <h1 class="clip">TNW</h1>
-    <div>
-      <a href="#"></a>
-      <ul>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Index</a></li>
-        <li><a href="#">Spaces</a></li>
-        <li><a href="#">Deals</a></li>
-        <li><a href="#">Answers</a></li>
-        <li><a href="#">Tnw Programs</a></li>
+    <div class="logo-wrap popup-wrap">
+      <a href="#" class="logo-link"><i class="logo-icon"></i></a>
+      <ul class="plain popup black-menu logo-menu">
+        <li><a class="faint" href="#">News</a></li>
+        <li><a class="faint" href="#">Events</a></li>
+        <li><a class="faint" href="#">Index</a></li>
+        <li><a class="faint" href="#">Spaces</a></li>
+        <li><a class="faint" href="#">Deals</a></li>
+        <li><a class="faint" href="#">Answers</a></li>
+        <li><a class="faint" href="#">Tnw Programs</a></li>
       </ul>
     </div>
-    <nav>
+    <nav class="main-nav flex-1">
       <h2 class="clip">Main Navigation</h2>
-      <div>
-        <ul>
+      <div class="flex space-between black-menu menu-row-1">
+        <ul class="plain h-list menu">
           <li><a href="#">News</a></li>
-          <li>
+          <li class="has-popup popup-wrap">
             <a href="#">Events ▾</a>
-            <ul>
+            <ul class="plain popup menu black-menu">
               <li><a href="#">TNW2020</a></li>
               <li><a href="#">Counch References</a></li>
             </ul>
           </li>
-          <li>
+          <li class="has-popup popup-wrap">
             <a href="#">Business ▾</a>
-            <ul>
+            <ul class="plain popup menu black-menu">
               <li><a href="#">Index</a></li>
               <li><a href="#">Programs</a></li>
             </ul>
@@ -46,37 +50,29 @@
           <li><a href="#">Spaces</a></li>
           <li><a href="#">Terms & Conditions</a></li>
         </ul>
-        <ul>
+        <ul class="plain h-list menu">
           <li><a href="#">About</a></li>
           <li><a href="#">Advertise</a></li>
           <li><a href="#">Jobs</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <div>
-        <ul>
+      <div class="flex space-between menu-row-2">
+        <ul class="plain h-list menu">
           <li><a href="#">Latest</a></li>
           <li><a href="#">Hard Fork</a></li>
           <li><a href="#">Plugged</a></li>
           <li><a href="#">README</a></li>
           <li><a href="#">Growth Quaters</a></li>
         </ul>
-        <ul>
-          <li><a href="#"><i class="icon search-icon"></i></a></li>
+        <ul class="plain h-list menu-buttons">
+          <li><a href="#"><i class="icon search-btn"></i></a></li>
           <li><a href="#"><i class="icon hamburger"></i></a></li>
         </ul>
       </div>
-      <div><img src="./assets/svg/tnw.svg" alt="tnw main heading" id="header-img-tnw"></div>
-    <nav>
-      <img src="./assets/svg/search.svg" alt="">
-      <img src="./assets/svg/hamburger-menu.svg" alt="">
-    </nav>
     </nav>
   </header>
   <main>
-    <section id="header-banner">
-      <p>Calling young digital talent in the Netherlands - Be recognised in the T500 &rarr;</p>
-    </section>
     <section class="highlights">
       <article class="highlights-article highlights-article-1">
         <h3>Opal cuts off your apps’ internet access to help you stop doomscrolling</h3>
