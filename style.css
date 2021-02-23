@@ -151,10 +151,6 @@ footer i {
   color: #ff4422;
 }
 
-#funding-articles-container section {
-  position: relative;
-}
-
 #funding-articles-container ul {
   padding: 0;
 }
@@ -212,17 +208,33 @@ footer i {
   background-color: red;
 }
 
+/* Funding section responsiveness */
+
+#funding-articles-container {
+  display: grid;
+}
+
+#funding-articles-container section {
+  position: relative;
+  margin: 2%;
+}
+
 #fourth-funding-section {
   display: none;
 }
 
 @media (min-width: 768px) {
   #funding-articles-container {
-    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  #fourth-funding-section {
+    display: block;
   }
 
-  #funding-articles-container section {
-    flex-basis: 32%;
-    margin: 1%;
+  #funding-articles-container {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
