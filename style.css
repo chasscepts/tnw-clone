@@ -111,6 +111,13 @@ header nav img {
   padding: 0.5em;
 }
 
+.page-alert-link {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 #nav-top-part,
 #nav-bottom-part div:nth-child(1) {
   display: none;
@@ -591,10 +598,11 @@ main {
 .menu-row-2 {
   background-color: #e3e9ec;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .menu-row-2 .menu {
-  visibility: hidden;
+  display: none;
   padding: 12px;
 }
 
@@ -711,7 +719,7 @@ ul.h-list.menu-buttons li {
   }
 
   .menu-row-2 .menu {
-    visibility: visible;
+    display: flex;
   }
 
   .menu-buttons > li:last-child {
