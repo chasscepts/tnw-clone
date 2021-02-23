@@ -237,11 +237,16 @@ header nav img {
   display: none;
 }
 
-ul.h-list > li.icon-before {
+ul.h-list > li.icon-before,
+p.icon-before {
   position: relative;
   padding: 0 0 0 18px;
   line-height: 1;
   font-weight: 600;
+}
+
+p.icon-before {
+  padding-left: 22px;
 }
 
 .icon-before::before {
@@ -254,12 +259,26 @@ ul.h-list > li.icon-before {
   background-size: cover;
 }
 
+p.icon-before::before {
+  width: 15px;
+  height: 15px;
+  top: 1px;
+}
+
 .icon-before.time::before {
   background-image: url(assets/images/time-gray.png);
 }
 
 .icon-before.share::before {
   background-image: url(assets/images/share-gray.png);
+}
+
+.icon-before.investment-card::before {
+  background-image: url(assets/images/pin.png);
+}
+
+.icon-before.portfolio::before {
+  background-image: url(assets/images/suitcase.png);
 }
 
 /* Funding section */
