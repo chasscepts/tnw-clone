@@ -348,6 +348,12 @@ p.icon-before::before {
   background-color: red;
 }
 
+#funding-articles-container > section > div.funding-section-last-part {
+  margin: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid #f9cdc2;
+}
+
 /* Funding section responsiveness */
 
 #funding-articles-container {
