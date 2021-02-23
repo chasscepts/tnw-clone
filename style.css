@@ -39,7 +39,7 @@ a.faint:hover {
   opacity: 1;
 }
 
-/* /////////// a /////////////////////*/
+/* /////////// a ///////////////////// */
 
 a {
   color: inherit;
@@ -62,17 +62,70 @@ ul.popup {
   z-index: 5;
 }
 
+.main-header a {
+  opacity: 0.6;
+}
+
+.highlights-article a {
+  color: #fff;
+  pointer-events: all;
+}
+
+.menu-row-2 a {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.menu-buttons a {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid rgb(202, 205, 207);
+}
+
+.highlights-article ul a {
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.menu li {
+  padding: 15px;
+}
+
+.logo-menu li {
+  padding: 5px;
+}
+
+ul.h-list > li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+ul.h-list.menu-buttons li {
+  padding: 0;
+}
+
+.menu-row-1 .popup {
+  width: 150px;
+}
+
+.menu-row-1 .popup a {
+  display: block;
+  width: 100%;
+}
+
+.menu-row-1 .popup li:not(:last-child) {
+  border-bottom: 1px solid rgb(40, 45, 49);
+}
+
 .popup-wrap {
   position: relative;
 }
 
 .popup-wrap:hover .popup {
   display: block;
-}
-
-ul.h-list > li {
-  display: inline-block;
-  padding: 0 5px;
 }
 
 /* ////////// flex /////////// */
@@ -88,6 +141,7 @@ ul.h-list > li {
 .flex-1 {
   flex: 1;
 }
+
 /* /////////// Main Header ///////////// */
 
 #main-header {
@@ -114,7 +168,7 @@ header nav img {
 }
 
 .page-alert-link {
-  background-color: #ffdd33;
+  background-color: #fd3;
   display: block;
   width: 100%;
   padding: 20px;
@@ -212,38 +266,18 @@ header nav img {
   opacity: 0.6;
 }
 
-.highlights-article ul a {
-  z-index: 2;
-  opacity: 0.6;
-}
-
-.highlights-article a {
-  color: #fff;
-  pointer-events: all;
-}
-
 .highlights-article a:hover {
   opacity: 1;
 }
 
 .hightlights-article-link {
-  background: linear-gradient(
-    to top,
-    rgb(0 0 0) 0%,
-    rgb(0 0 0 / 80%) 25%,
-    rgb(0 0 0 / 42%) 50%
-  );
+  background: linear-gradient(to top, rgb(0 0 0) 0%, rgb(0 0 0 / 80%) 25%, rgb(0 0 0 / 42%) 50%);
   transition: all 0.3s ease-in-out;
 }
 
 .hightlights-article-link:hover {
+  background: linear-gradient(to top, rgb(0 0 0) 0%, rgb(0 0 0 / 75%) 25%, rgb(0 0 0 / 35%) 50%);
   background-color: rgba(0, 0, 0, 0.2);
-  background: linear-gradient(
-    to top,
-    rgb(0 0 0) 0%,
-    rgb(0 0 0 / 75%) 25%,
-    rgb(0 0 0 / 35%) 50%
-  );
 }
 
 .highlights-log-wrap {
@@ -301,7 +335,7 @@ p.icon-before::before {
 }
 
 #funding-heading {
-  color: #ff4422;
+  color: #f42;
 }
 
 #funding-articles-container ul {
@@ -330,6 +364,13 @@ p.icon-before::before {
   border-top: 1px solid #fcebe7;
   padding: 1em 0;
   margin: 1em 0;
+}
+
+#funding-articles-container > section > p {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  color: #555;
+  font-weight: 100;
 }
 
 #funding-articles-container .funding-articles-container-last-part p {
@@ -379,13 +420,6 @@ p.icon-before::before {
   font-size: 1rem;
 }
 
-#funding-articles-container > section > p {
-  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1rem;
-  color: #555;
-  font-weight: 100;
-}
-
 /* Funding section responsiveness */
 
 #funding-articles-container {
@@ -401,6 +435,10 @@ p.icon-before::before {
   display: none;
 }
 
+.main-header a:hover {
+  opacity: 1;
+}
+
 /* ///////////// footer ///////////// */
 
 .footer-top {
@@ -408,7 +446,7 @@ p.icon-before::before {
   background-color: #131313;
 }
 
-.footer-top ul {
+#footer .footer-top ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -417,11 +455,11 @@ p.icon-before::before {
   padding: 0;
 }
 
-.footer-top ul:first-child {
+#footer .footer-top ul:first-child {
   margin-bottom: 15px;
 }
 
-.footer-top ul li {
+#footer .footer-top ul li {
   padding: 0 8px;
 }
 
@@ -452,7 +490,7 @@ p.icon-before::before {
   background-color: transparent;
 }
 
-.footer-top-list-2 a {
+#footer .footer-top-list-2 a {
   text-transform: uppercase;
   text-decoration: none;
   color: #a7abaf;
@@ -460,7 +498,7 @@ p.icon-before::before {
   font-size: 0.7rem;
 }
 
-.footer-top-list-2 a:hover {
+#footer .footer-top-list-2 a:hover {
   color: #fff;
 }
 
@@ -544,14 +582,6 @@ main {
   line-height: 1;
 }
 
-.main-header a {
-  opacity: 0.6;
-}
-
-.main-header a:hover {
-  opacity: 1;
-}
-
 .logo-wrap {
   position: relative;
   background-color: #000;
@@ -579,10 +609,6 @@ main {
   text-align: center;
 }
 
-.logo-menu li {
-  padding: 5px;
-}
-
 .black-menu {
   background-color: #000;
   color: #fff;
@@ -604,44 +630,8 @@ main {
   padding: 12px;
 }
 
-.menu-row-1 .popup {
-  width: 150px;
-}
-
-.menu-row-1 .popup a {
-  display: block;
-  width: 100%;
-}
-
-.menu-row-1 .popup li:not(:last-child) {
-  border-bottom: 1px solid rgb(40, 45, 49);
-}
-
-.menu-row-2 a {
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.menu li {
-  padding: 15px;
-}
-
 .menu-buttons {
   display: flex;
-}
-
-.menu-buttons a {
-  display: block;
-  height: 48px;
-  width: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-left: 1px solid rgb(202, 205, 207);
-}
-
-ul.h-list.menu-buttons li {
-  padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -665,23 +655,13 @@ ul.h-list.menu-buttons li {
   }
 
   .hightlights-article-link {
+    background: linear-gradient(to top, rgb(0 0 0) 0%, rgb(0 0 0 / 80%) 25%, rgb(0 0 0 / 42%) 50%);
     background-color: rgba(0, 0, 0, 0.1);
-    background: linear-gradient(
-      to top,
-      rgb(0 0 0) 0%,
-      rgb(0 0 0 / 80%) 25%,
-      rgb(0 0 0 / 42%) 50%
-    );
     transition: all 0.3s ease-in-out;
   }
 
   .hightlights-article-link:hover {
-    background: linear-gradient(
-      to top,
-      rgb(0 0 0) 0%,
-      rgb(0 0 0 / 75%) 25%,
-      rgb(0 0 0 / 35%) 50%
-    );
+    background: linear-gradient(to top, rgb(0 0 0) 0%, rgb(0 0 0 / 75%) 25%, rgb(0 0 0 / 35%) 50%);
   }
 
   .highlights > article {
@@ -808,23 +788,11 @@ ul.h-list.menu-buttons li {
   }
 
   .highlights-article-1 .hightlights-article-link {
-    background: linear-gradient(
-      rgb(255 24 0 / 65%) 0%,
-      rgb(100 9 0 / 64%) 50%,
-      rgb(121 81 72 / 43%) 80%
-    );
+    background: linear-gradient(rgb(255 24 0 / 65%) 0%, rgb(100 9 0 / 64%) 50%, rgb(121 81 72 / 43%) 80%);
   }
 
   .highlights-article-1 .hightlights-article-link:hover {
-    background: linear-gradient(
-      rgb(255 24 0 / 60%) 0%,
-      rgb(100 9 0 / 55%) 50%,
-      rgb(121 81 72 / 43%) 80%
-    );
-  }
-
-  .highlights {
-    height: 380px;
+    background: linear-gradient(rgb(255 24 0 / 60%) 0%, rgb(100 9 0 / 55%) 50%, rgb(121 81 72 / 43%) 80%);
   }
 
   .page-alert-link {
