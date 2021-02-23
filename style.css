@@ -81,6 +81,11 @@ footer i {
 
 /* //////////// highlights section ////////// */
 
+.highlights {
+  padding: 0 8px 8px;
+  pointer-events: none;
+}
+
 .highlights-article {
   position: relative;
   width: 100%;
@@ -90,6 +95,8 @@ footer i {
   flex-direction: column;
   justify-content: flex-end;
   padding: 10px;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
 }
 
 .highlights-article-1 {
@@ -107,6 +114,7 @@ footer i {
 .highlights-article h3 {
   font-size: 1.6rem;
   z-index: 2;
+  margin-bottom: 15px;
 }
 
 .highlights-article ul {
@@ -114,8 +122,14 @@ footer i {
   opacity: 0.6;
 }
 
+.highlights-article ul a {
+  z-index: 2;
+  opacity: 0.6;
+}
+
 .highlights-article a {
   color: #fff;
+  pointer-events: all;
 }
 
 .highlights-article a:hover {
@@ -126,18 +140,24 @@ footer i {
   background: linear-gradient(
     to top,
     rgb(0 0 0) 0%,
-    rgb(0 0 0 / 80%) 10%,
+    rgb(0 0 0 / 80%) 25%,
     rgb(0 0 0 / 42%) 50%
   );
+  transition: all 0.3s ease-in-out;
 }
 
 .hightlights-article-link:hover {
+  background-color: rgba(0, 0, 0, 0.2);
   background: linear-gradient(
     to top,
     rgb(0 0 0) 0%,
-    rgb(0 0 0 / 60%) 10%,
-    rgb(0 0 0 / 30%) 50%
+    rgb(0 0 0 / 75%) 25%,
+    rgb(0 0 0 / 35%) 50%
   );
+}
+
+.highlights-log-wrap {
+  display: none;
 }
 
 /* Funding section */
@@ -304,4 +324,69 @@ footer i {
 
 .icon.email-light {
   background-image: url(assets/images/email-light.png);
+}
+
+@media (min-width: 768px) { 
+  .highlights {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50% 50%;
+    column-gap: 8px;
+    row-gap: 8px;
+    padding-top: 2px;
+    height: 275px;
+  }
+
+  .highlights-article {
+    background-size: cover;
+    margin-bottom: 0;
+  }
+
+  .hightlights-article-link {
+    background-color: rgba(0, 0, 0, 0.1);
+    background: linear-gradient(
+      to top,
+      rgb(0 0 0) 0%,
+      rgb(0 0 0 / 80%) 25%,
+      rgb(0 0 0 / 42%) 50%
+    );
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hightlights-article-link:hover {
+    background: linear-gradient(
+      to top,
+      rgb(0 0 0) 0%,
+      rgb(0 0 0 / 75%) 25%,
+      rgb(0 0 0 / 35%) 50%
+    );
+  }
+
+  .highlights > article {
+    height: 100%;
+  }
+
+  .highlights > article:nth-child(1) {
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .highlights > article:nth-child(2),
+  .highlights > article:nth-child(3) {
+    grid-column: 2;
+  }
+
+  .highlights > article:nth-child(2) {
+    grid-row: 1;
+  }
+  
+  .highlights > article:nth-child(3) {
+    grid-row: 2;
+  }
+
+  .highlights > article:nth-child(1) > h3 {
+    font-size: 3.2rem;
+    line-height: 0.9;
+  }
 }
