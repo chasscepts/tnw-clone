@@ -390,3 +390,38 @@ footer i {
     line-height: 0.9;
   }
 }
+
+@media (min-width: 1024px) {
+  .highlights {
+    height: 380px;
+  }
+
+  .highlights-log-wrap {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .highlights-log-wrap img {
+    width: 300px;
+  }
+
+  .highlights-article-1 .hightlights-article-link {
+    background: linear-gradient( 
+      rgb(255 24 0 / 65%) 0%, 
+      rgb(100 9 0 / 64%) 50%, 
+      rgb(121 81 72 / 43%) 80% 
+    );
+  }
+
+  .highlights-article-1 .hightlights-article-link:hover {
+    background: linear-gradient( 
+      rgb(255 24 0 / 60%) 0%, 
+      rgb(100 9 0 / 55%) 50%, 
+      rgb(121 81 72 / 43%) 80% 
+    );
+  }
+}
