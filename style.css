@@ -7,10 +7,16 @@ html {
   background-color: #fff;
   font-size: 14px;
   line-height: 1.5;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
 }
 
 li {
   list-style: none;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #f42;
 }
 
 *,
@@ -103,6 +109,15 @@ ul.h-list > li {
   padding: 0 5px;
 }
 
+.funding-heading > ul > li {
+  margin: 0.7rem;
+}
+
+.funding-articles-container ul li {
+  font-size: 1.1rem;
+  margin: 1rem;
+}
+
 ul.h-list.menu-buttons li {
   padding: 0;
 }
@@ -114,6 +129,10 @@ ul.h-list.menu-buttons li {
 .menu-row-1 .popup a {
   display: block;
   width: 100%;
+}
+
+.footer .footer-top ul li {
+  padding: 0 8px;
 }
 
 .menu-row-1 .popup li:not(:last-child) {
@@ -144,11 +163,6 @@ ul.h-list.menu-buttons li {
 
 /* /////////// Main Header ///////////// */
 
-#main-header {
-  display: flex;
-  justify-content: space-between;
-}
-
 #header-img-tnw {
   background-color: black;
   padding: 1em;
@@ -160,7 +174,7 @@ header nav img {
   color: red;
 }
 
-#header-banner {
+.header-banner {
   position: fixed;
   top: 51px;
   width: 100%;
@@ -176,50 +190,6 @@ header nav img {
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
-}
-
-#nav-top-part,
-#nav-bottom-part div:nth-child(1) {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  #main-header {
-    display: grid;
-    grid-template-columns: 10% 90%;
-  }
-
-  #header-tnw-container {
-    grid-row: 1/4;
-  }
-
-  #nav-top-part {
-    background-color: black;
-    color: white;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #nav-bottom-part div:nth-child(1) {
-    display: block;
-  }
-
-  #nav-bottom-part > div:nth-child(2) > img:nth-child(2) {
-    display: none;
-  }
-
-  #nav-bottom-part {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  header nav ul {
-    display: flex;
-  }
 }
 
 /* //////////// highlights section ////////// */
@@ -330,61 +300,57 @@ p.icon-before::before {
 
 /* Funding section */
 
-#funding-section {
+.funding-section {
   background-color: #fefaf8;
-}
-
-#funding-heading {
-  color: #f42;
-}
-
-#funding-articles-container ul {
-  padding: 0;
-}
-
-#funding-articles-container ul li {
-  font-size: 1.1rem;
   margin: 1rem;
 }
 
-#funding-articles-container section h3 {
+.funding-heading {
+  color: #f42;
+}
+
+.funding-articles-container ul {
+  padding: 0;
+}
+
+.funding-articles-container section h3 {
   color: white;
   margin: 0 3.7em;
   padding: 0.7em;
 }
 
-#funding-articles-container p {
+.funding-articles-container p {
   color: #555;
   font-size: 0.8em;
   line-height: 1.5em;
 }
 
-#funding-articles-container .funding-articles-container-last-part {
+.funding-articles-container .funding-articles-container-last-part {
   background-color: #fefaf8;
   border-top: 1px solid #fcebe7;
   padding: 1em 0;
   margin: 1em 0;
 }
 
-#funding-articles-container > section > p {
+.funding-articles-container > section > p {
   font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   color: #555;
   font-weight: 100;
 }
 
-#funding-articles-container .funding-articles-container-last-part p {
+.funding-articles-container .funding-articles-container-last-part p {
   font-size: 0.9rem;
   color: #555;
   line-height: 1.4rem;
 }
 
-#funding-articles-container .funding-articles-container-last-part span {
+.funding-articles-container .funding-articles-container-last-part span {
   color: #aaa;
   font-size: 1rem;
 }
 
-#funding-articles-container > section > img {
+.funding-articles-container > section > img {
   position: absolute;
   height: 3em;
   width: 3em;
@@ -392,29 +358,29 @@ p.icon-before::before {
   left: 0.5em;
 }
 
-#funding-articles-container > section > div:nth-child(3) {
+.funding-articles-container > section > div:nth-child(3) {
   background-color: #fcebe7;
   color: black;
   margin-bottom: 1em;
 }
 
-#funding-articles-container > section > div:nth-child(3) > div {
+.funding-articles-container > section > div:nth-child(3) > div {
   color: black;
   margin: 0 3.7em;
   padding: 0.5em;
 }
 
-#funding-articles-container > section > div.h3-container {
+.funding-articles-container > section > div.h3-container {
   background-color: red;
 }
 
-#funding-articles-container > section > div.funding-section-last-part {
+.funding-articles-container > section > div.funding-section-last-part {
   margin: 1rem;
   padding: 1rem 0;
   border-top: 1px solid #f9cdc2;
 }
 
-#funding-articles-container > section > div.funding-section-last-part > span {
+.funding-articles-container > section > div.funding-section-last-part > span {
   color: #aaa;
   line-height: 21px;
   font-size: 1rem;
@@ -422,16 +388,16 @@ p.icon-before::before {
 
 /* Funding section responsiveness */
 
-#funding-articles-container {
+.funding-articles-container {
   display: grid;
 }
 
-#funding-articles-container section {
+.funding-articles-container section {
   position: relative;
   margin: 2%;
 }
 
-#fourth-funding-section {
+.fourth-funding-section {
   display: none;
 }
 
@@ -446,7 +412,7 @@ p.icon-before::before {
   background-color: #131313;
 }
 
-#footer .footer-top ul {
+.footer .footer-top ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -455,12 +421,8 @@ p.icon-before::before {
   padding: 0;
 }
 
-#footer .footer-top ul:first-child {
+.footer .footer-top ul:first-child {
   margin-bottom: 15px;
-}
-
-#footer .footer-top ul li {
-  padding: 0 8px;
 }
 
 .footer-bottom {
@@ -490,7 +452,7 @@ p.icon-before::before {
   background-color: transparent;
 }
 
-#footer .footer-top-list-2 a {
+.footer .footer-top-list-2 a {
   text-transform: uppercase;
   text-decoration: none;
   color: #a7abaf;
@@ -498,7 +460,7 @@ p.icon-before::before {
   font-size: 0.7rem;
 }
 
-#footer .footer-top-list-2 a:hover {
+.footer .footer-top-list-2 a:hover {
   color: #fff;
 }
 
@@ -635,7 +597,16 @@ main {
 }
 
 @media (min-width: 768px) {
-  #funding-articles-container {
+  .main-header {
+    display: grid;
+    grid-template-columns: 10% 90%;
+  }
+
+  header nav ul {
+    display: flex;
+  }
+
+  .funding-articles-container {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -708,7 +679,7 @@ main {
     display: none;
   }
 
-  #header-banner {
+  .header-banner {
     top: 80px;
   }
 
@@ -724,7 +695,7 @@ main {
 
   /* Funding section responsiveness */
 
-  #funding-articles-container > section > img {
+  .funding-articles-container > section > img {
     position: absolute;
     height: 3em;
     width: 3em;
@@ -732,37 +703,37 @@ main {
     left: 0.5em;
   }
 
-  #funding-articles-container > section > div:nth-child(3) {
+  .funding-articles-container > section > div:nth-child(3) {
     background-color: #fcebe7;
     color: black;
     margin-bottom: 1em;
   }
 
-  #funding-articles-container > section > div:nth-child(3) > div {
+  .funding-articles-container > section > div:nth-child(3) > div {
     color: black;
     margin: 0 3.7em;
     padding: 0.5em;
   }
 
-  #funding-articles-container > section > div.h3-container {
+  .funding-articles-container > section > div.h3-container {
     background-color: red;
   }
 
-  #funding-articles-container section {
+  .funding-articles-container section {
     position: relative;
     margin: 2%;
   }
 
-  #fourth-funding-section {
+  .fourth-funding-section {
     display: none;
   }
 
   /* Funding heading responsiveness */
-  #funding-heading > ul {
+  .funding-heading > ul {
     display: flex;
   }
 
-  #funding-heading > ul > li:not(li:nth-child(3))::after {
+  .funding-heading > ul > li:not(li:nth-child(3))::after {
     content: "|";
     margin-left: 10px;
     margin-right: 10px;
@@ -799,23 +770,25 @@ main {
     padding-left: 20px;
   }
 
-  #fourth-funding-section {
+  .fourth-funding-section {
     display: block;
   }
 
-  #funding-articles-container {
+  .funding-articles-container {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  /* funding heading @1024 */
-
-  #funding-heading {
+  .funding-heading {
     display: flex;
     justify-content: space-between;
   }
 
-  #funding-section {
+  .funding-heading > ul > li {
+    margin: 0.1rem;
+  }
+
+  .funding-section {
     width: 75%;
-    margin: auto;
+    margin: 4rem auto;
   }
 }
