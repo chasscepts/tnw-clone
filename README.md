@@ -35,6 +35,8 @@ Additional description about the project and its features.
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/samrood-ali/)
 - Twitter: [@ali_samrood](https://twitter.com/ali_samrood)
 
+## Author3
+
 👤 **Olaoluwa Soladoye**
 
 - GitHub: [@crappypapa](https://github.com/crappypapa)
