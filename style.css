@@ -709,7 +709,7 @@ main {
 
 .bg-card-cover {
   background: linear-gradient(to top, rgb(0 0 0) 0%, rgb(0 0 0 / 80%) 25%, rgb(0 0 0 / 42%) 50%);
-    background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .categories-card-text {
@@ -726,18 +726,17 @@ main {
   padding: 15px 30px 30px 15px;
 }
 
-.categories-list li {
+.categories-list-item {
   padding: 7px;
   padding-left: 10px;
   border-bottom: 1px solid rgb(222, 229, 233);
   position: relative;
 }
 
-.categories-list li::before {
-  content: "\2022"; 
+.categories-list-item::before {
+  content: "\2022";
   color: red;
   font-weight: bold;
-  
   position: absolute;
   left: 0;
   top: 4px;
@@ -796,7 +795,7 @@ main {
   font-weight: bold;
 }
 
-.orange-on-hover:hover{
+.orange-on-hover:hover {
   color: #f42;
 }
 
@@ -1001,7 +1000,7 @@ main {
   }
 
   .lg-columns-3 {
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .lg-columns-4 {
