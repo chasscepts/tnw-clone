@@ -744,7 +744,39 @@ main {
 }
 
 .hard-fork {
-  background-image: url(assets/images/ringover.webp);
+  background-image: url(assets/images/gamestop.jpg);
+}
+
+.apps {
+  background-image: url(assets/images/phones.webp);
+}
+
+.gear {
+  background-image: url(assets/images/iphone.jpg);
+}
+
+.tech {
+  background-image: url(assets/images/toys.jpg);
+}
+
+.creative {
+  background-image: url(assets/images/topview.webp);
+}
+
+.podium {
+  background-image: url(assets/images/code.webp);
+}
+
+.insights {
+  background-image: url(assets/images/zoom.webp);
+}
+
+.launch {
+  background-image: url(assets/images/toyota.jpg);
+}
+
+.distract {
+  background-image: url(assets/images/amplified-368x276.jpg);
 }
 
 /* //////// Latest News/Deals ////////// */
